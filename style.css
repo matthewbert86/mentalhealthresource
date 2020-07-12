@@ -1,15 +1,57 @@
+
+
+body {
+  /* Location of the image */
+  background-image: url(sky.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  font-family: 'Kreon', serif;
+}
+
 .header {
     text-align: center;
     margin: auto;
-    
+    color: #83b35e;
+    font-size: 4.6rem;
+}
+
+.headerTwo {
+    color: #5d87ab;
+    text-align: center;
+    margin: -32px auto 0 0;
+    font-size: 5.7rem;
+}
+
+.welcome-container {
+  width: 100%;
+  align-content: center;
 }
 
 .welcome {
-    margin: auto;
-    text-align: center;
-    width: 65%;
+    margin: 0 auto;
+    display: block;
+    width: 50%;
     padding: 20px;
     font-size: 20px;
+    font-weight: bold;
+    color: #777777;
 }
 
 .input {
@@ -30,9 +72,9 @@
 }
 
 .collection-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  background-color: transparent;/*rgba(255, 255, 255, 0.8);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 5px;
   font-size: 20px;
   
 }
