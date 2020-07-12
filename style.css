@@ -1,0 +1,51 @@
+.header {
+    text-align: center;
+    margin: auto;
+    
+}
+
+.welcome {
+    margin: auto;
+    text-align: center;
+    width: 65%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.input {
+    margin: 20px auto; 
+    display: block;
+    width: 30em;
+    height: 30px;
+}
+
+.collection-grid {
+    display: grid;
+    /* grid-gap: 50px; */
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.collection-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hash {
+    font-size: 20px;
+    color: black;
+}
