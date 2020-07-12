@@ -34,7 +34,7 @@ let filterInput = document.getElementById('filterInput');
             // getElementByTagName will help us get the names into our variable
             // the current iteration of the look will have us use li[i]
             // [0] is used because we only want the current link
-            let a = li[i].getElementsByTagName('a')[0];
+            let a = li[i].getElementsByTagName('button')[0];
             // lets check to see if what the user types in has a match in our list
 
             // innerHTML will grab whatever is inside the <a> tag
@@ -50,3 +50,21 @@ let filterInput = document.getElementById('filterInput');
         }
 
     }
+
+// ADD ACCORDION TO EACH LIST ITEM
+    // We dont want the user to see the link, I just want them to be able to see the accordion so they can click on that for it to drop down. I have those links set to hidden for now in html
+
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
