@@ -25,6 +25,8 @@ body {
   font-family: 'Kreon', serif;
 }
 
+/**** HEADER SECTION *****/
+
 .header {
     text-align: center;
     margin: auto;
@@ -57,9 +59,12 @@ body {
 .input {
     margin: 20px auto; 
     display: block;
-    width: 30em;
-    height: 30px;
+    width: 50%;
+    height: 40px;
+    font-size: 25px;
 }
+
+/****** LIST GRID DISPLAY *****/
 
 .collection-grid {
     display: grid;
@@ -79,6 +84,8 @@ body {
   
 }
 
+/****** LIST STYLING *****/
+
 li {
     list-style-type: none;
 }
@@ -87,11 +94,8 @@ a {
     text-decoration: none;
 }
 
-.hash {
-    font-size: 20px;
-    color: black;
-}
 
+/***** ACCORDION STYLING *****/
 
 .accordion {
   background-color: #eee;
@@ -128,4 +132,39 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+
+/***** MOBILE STYLING *****/
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+  .welcome {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+}
+.input {
+    margin: 20px auto; 
+    display: block;
+    width: 90%;
+    height: 40px;
+    font-size: 25px;
+}
+
+  .collection-grid {
+    display: grid;
+    /* grid-gap: 50px; */
+    grid-template-columns: auto;
+    /*background-color: #2196F3;*/
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
 }
